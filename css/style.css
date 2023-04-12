@@ -1,6 +1,7 @@
 /*Colors*/
 /*Primary*/
 /*Neutral*/
+/*Alternate*/
 /*Font Weights*/
 *, *::before, *::after {
   padding: 0;
@@ -85,19 +86,18 @@ body {
   display: block;
   width: 100%;
   height: 3rem;
-  border: 0.0625rem solid hsl(0, 36%, 70%);
   border-radius: 1.75rem;
   padding-inline: 1.4375rem;
   font-size: inherit;
   color: hsl(0, 6%, 24%);
   background-color: transparent;
-  transition: opacity 0.12s ease-in-out;
+  transition: border-color 0.12s ease-in-out;
 }
 .coming-soon__email:-moz-placeholder-shown {
-  opacity: 0.5;
+  border: 0.0625rem solid hsla(0, 36%, 70%, 0.5);
 }
 .coming-soon__email[value=""], .coming-soon__email:placeholder-shown {
-  opacity: 0.5;
+  border: 0.0625rem solid hsla(0, 36%, 70%, 0.5);
 }
 .coming-soon__email::-moz-placeholder {
   color: hsl(0, 36%, 70%);
@@ -107,7 +107,7 @@ body {
 }
 .coming-soon__email:focus {
   outline: none;
-  opacity: 1;
+  border: 0.0625rem solid hsl(0, 36%, 70%);
 }
 .coming-soon__email:focus::-moz-placeholder {
   color: transparent;

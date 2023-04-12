@@ -17,6 +17,8 @@ $very-desaturated-pink: hsl(0, 100%, 98%);
 $desaturated-brown: hsl(0, 44%, 60%);
 $dark-grayish-red: hsl(0, 6%, 24%);
 $black: hsl(0, 0%, 0%);
+/*Alternate*/
+$desaturated-red-transparent: hsla(0, 36%, 70%, .5);
 
 /*Font Weights*/
 $light: 300;
@@ -116,16 +118,15 @@ body {
         display: block;
         width: 100%;
         height: rem(48px);
-        border: rem(1px) solid $desaturated-red;
         border-radius: rem(28px);
         padding-inline: rem(23px);
         font-size: inherit;
         color: $dark-grayish-red;
         background-color: transparent;
-        transition: opacity .12s ease-in-out;
+        transition: border-color .12s ease-in-out;
 
         &[value=""], &:placeholder-shown {
-            opacity: .5;
+            border: rem(1px) solid $desaturated-red-transparent;
         }
 
         &::placeholder {
@@ -134,7 +135,7 @@ body {
 
         &:focus {
             outline: none;
-            opacity: 1;
+            border: rem(1px) solid $desaturated-red;
 
             &::placeholder {
                 color: transparent;

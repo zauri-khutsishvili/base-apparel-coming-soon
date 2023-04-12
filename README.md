@@ -4,8 +4,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/intro-component-with-signup-form-q6fOmRgtMD](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-q6fOmRgtMD)
-- Live Site URL: [https://zauri-khutsishvili.github.io/intro-component-with-signup-form/](https://zauri-khutsishvili.github.io/intro-component-with-signup-form/)
+- Solution URL: [https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-H8kfOeK5Ah](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-H8kfOeK5Ah)
+- Live Site URL: [https://zauri-khutsishvili.github.io/base-apparel-coming-soon/](https://zauri-khutsishvili.github.io/base-apparel-coming-soon/)
 
 ## Built with
 
