@@ -1,0 +1,269 @@
+/*Colors*/
+/*Primary*/
+/*Neutral*/
+/*Font Weights*/
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.05;
+  letter-spacing: 0.27em;
+}
+
+strong {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: hsl(0, 36%, 70%);
+}
+
+.coming-soon {
+  background: linear-gradient(150.03deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 84.51%);
+  min-height: 100vh;
+}
+.coming-soon__logo-container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  padding-top: 1.9375rem;
+}
+.coming-soon__logo {
+  width: clamp(6.25rem, 26.667%, 9.875rem);
+  display: inline-block;
+  vertical-align: middle;
+}
+.coming-soon__hero-image {
+  width: 100%;
+}
+.coming-soon__content {
+  padding: 4rem 8.53333%;
+  text-align: center;
+}
+.coming-soon__heading, .coming-soon__description, .coming-soon__form {
+  max-width: 28.75rem;
+  margin: auto;
+}
+.coming-soon__heading {
+  text-transform: uppercase;
+  -webkit-margin-after: 0.4em;
+          margin-block-end: 0.4em;
+}
+.coming-soon__heading strong {
+  display: block;
+}
+.coming-soon__description {
+  line-height: 1.5714;
+  -webkit-margin-after: 2.3em;
+          margin-block-end: 2.3em;
+}
+.coming-soon__form, .coming-soon__email-container {
+  position: relative;
+}
+.coming-soon__email {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  border: 0.0625rem solid hsl(0, 36%, 70%);
+  border-radius: 1.75rem;
+  padding-inline: 1.4375rem;
+  font-size: inherit;
+  color: hsl(0, 6%, 24%);
+  background-color: transparent;
+  transition: opacity 0.12s ease-in-out;
+}
+.coming-soon__email:-moz-placeholder-shown {
+  opacity: 0.5;
+}
+.coming-soon__email[value=""], .coming-soon__email:placeholder-shown {
+  opacity: 0.5;
+}
+.coming-soon__email::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.coming-soon__email::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.coming-soon__email:focus {
+  outline: none;
+  opacity: 1;
+}
+.coming-soon__email:focus::-moz-placeholder {
+  color: transparent;
+}
+.coming-soon__email:focus::placeholder {
+  color: transparent;
+}
+.coming-soon__email.error {
+  border: 0.125rem solid hsl(0, 93%, 68%);
+  padding-inline: 1.375rem;
+  opacity: 1;
+}
+.coming-soon__error {
+  position: absolute;
+  top: 0.75rem;
+  right: clamp(4.5rem, 23.151%, 7.25rem);
+  opacity: 0;
+  transition: opacity 0.12s ease-in-out;
+}
+.coming-soon__email-container.error .coming-soon__error {
+  opacity: 1;
+}
+.coming-soon__submit {
+  all: unset;
+  box-sizing: inherit;
+  width: clamp(4rem, 20.578778%, 6.25rem);
+  height: 3rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 50%, hsl(0, 80%, 86%) 50%, hsl(0, 74%, 74%) 100%);
+  background-size: 280%;
+  background-position: 100% 100%;
+  box-shadow: 0 0.9375rem 1.25rem rgba(198, 108, 108, 0.247569);
+  border-radius: 1.75rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.coming-soon__submit:hover {
+  background-position: 0% 0%;
+  box-shadow: 0 0.9375rem 1.25rem rgba(198, 108, 108, 0.5);
+}
+.coming-soon__submit img {
+  margin: auto;
+  transform: translateX(0.0625rem);
+}
+.coming-soon__error-message {
+  display: block;
+  font-size: 0.8125rem;
+  line-height: 1;
+  text-align: left;
+  color: hsl(0, 93%, 68%);
+  margin-inline: 1.4375rem;
+  -webkit-margin-before: 0.625em;
+          margin-block-start: 0.625em;
+  opacity: 0;
+  transition: opacity 0.12s ease-in-out;
+}
+.coming-soon__email-container.error .coming-soon__error-message {
+  opacity: 1;
+}
+
+@media (max-width: 18.75em) {
+  .coming-soon__heading {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 62.5em) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 0.27em;
+  }
+  body {
+    font-size: 1rem;
+  }
+  .coming-soon {
+    background: url(../images/bg-pattern-desktop.svg), linear-gradient(150.03deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 84.51%);
+    background-repeat: no-repeat;
+    background-size: 57.639% 100%, 100%;
+    display: grid;
+    grid-template-columns: 57.639fr 42.361fr;
+    grid-template-rows: 1fr 2.42fr;
+  }
+  .coming-soon__logo-container {
+    background-color: transparent;
+    padding: 0;
+    margin: 4.0625rem 26.5% 4.0625rem 19.88%;
+  }
+  .coming-soon__logo {
+    width: initial;
+  }
+  .coming-soon__hero-container {
+    grid-column: 2;
+    grid-row: 1/-1;
+    max-height: 100vh;
+  }
+  .coming-soon__hero-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .coming-soon__content {
+    padding: 0;
+    margin: 0 26.5% 0 19.88%;
+    text-align: left;
+  }
+  .coming-soon__heading, .coming-soon__description, .coming-soon__form {
+    max-width: none;
+    margin: 0;
+  }
+  .coming-soon__heading {
+    -webkit-margin-after: 0.28em;
+            margin-block-end: 0.28em;
+  }
+  .coming-soon__heading strong {
+    line-height: 1.11;
+  }
+  .coming-soon__description {
+    line-height: 1.75;
+    -webkit-margin-after: 2.5em;
+            margin-block-end: 2.5em;
+    -webkit-margin-start: 0.0625rem;
+            margin-inline-start: 0.0625rem;
+  }
+  .coming-soon__form {
+    max-width: 31.25rem;
+  }
+  .coming-soon__email {
+    height: 3.5rem;
+    padding-inline: 1.9375rem;
+    padding-block: 1.3125rem 1.1875rem;
+  }
+  .coming-soon__email.error {
+    padding-inline: 1.875rem;
+  }
+  .coming-soon__error {
+    top: 1.0625rem;
+    right: 7.25rem;
+  }
+  .coming-soon__submit {
+    width: 6.25rem;
+    height: 3.5rem;
+    background-size: 280%;
+    background-position: 100% 100%;
+  }
+  .coming-soon__submit:hover {
+    background-position: 0% 0%;
+    box-shadow: 0 0.9375rem 1.25rem rgba(198, 108, 108, 0.5);
+  }
+  .coming-soon__error-message {
+    line-height: 2.1538;
+    margin-inline: 2rem;
+    -webkit-margin-before: 0.30769em;
+            margin-block-start: 0.30769em;
+  }
+}/*# sourceMappingURL=style.css.map */
