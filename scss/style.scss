@@ -17,8 +17,6 @@ $very-desaturated-pink: hsl(0, 100%, 98%);
 $desaturated-brown: hsl(0, 44%, 60%);
 $dark-grayish-red: hsl(0, 6%, 24%);
 $black: hsl(0, 0%, 0%);
-/*Alternate*/
-$desaturated-red-transparent: hsla(0, 36%, 70%, .5);
 
 /*Font Weights*/
 $light: 300;
@@ -126,7 +124,7 @@ body {
         transition: border-color .12s ease-in-out;
 
         &[value=""], &:placeholder-shown {
-            border: rem(1px) solid $desaturated-red-transparent;
+            border: rem(1px) solid rgba($desaturated-red, 0.5);
         }
 
         &::placeholder {
@@ -166,7 +164,7 @@ body {
         box-sizing: inherit;
         width: clamp(rem(64px), 20.578778%, rem(100px));
         height: rem(48px);
-        background-image: linear-gradient(135deg, $desaturated-pink 50%, $desaturated-pink 50%, $muted-pink 100%);
+        background-image: linear-gradient(135deg, $desaturated-pink 53%, $desaturated-pink 53%, $muted-pink 100%);
         background-size: 280%;
         background-position: 100% 100%;
         box-shadow: 0 rem(15px) rem(20px) rgba($desaturated-brown, 0.247569);

@@ -1,7 +1,6 @@
 /*Colors*/
 /*Primary*/
 /*Neutral*/
-/*Alternate*/
 /*Font Weights*/
 *, *::before, *::after {
   padding: 0;
@@ -94,10 +93,10 @@ body {
   transition: border-color 0.12s ease-in-out;
 }
 .coming-soon__email:-moz-placeholder-shown {
-  border: 0.0625rem solid hsla(0, 36%, 70%, 0.5);
+  border: 0.0625rem solid rgba(206, 151, 151, 0.5);
 }
 .coming-soon__email[value=""], .coming-soon__email:placeholder-shown {
-  border: 0.0625rem solid hsla(0, 36%, 70%, 0.5);
+  border: 0.0625rem solid rgba(206, 151, 151, 0.5);
 }
 .coming-soon__email::-moz-placeholder {
   color: hsl(0, 36%, 70%);
@@ -135,7 +134,7 @@ body {
   box-sizing: inherit;
   width: clamp(4rem, 20.578778%, 6.25rem);
   height: 3rem;
-  background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 50%, hsl(0, 80%, 86%) 50%, hsl(0, 74%, 74%) 100%);
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 53%, hsl(0, 80%, 86%) 53%, hsl(0, 74%, 74%) 100%);
   background-size: 280%;
   background-position: 100% 100%;
   box-shadow: 0 0.9375rem 1.25rem rgba(198, 108, 108, 0.247569);
